@@ -120,6 +120,7 @@ const Controls = forwardRef(
       onToggleFullScreen,
       volume,
       onVolumeChange,
+      onBookmark,
     },
     ref
   ) => {
@@ -154,6 +155,7 @@ const Controls = forwardRef(
           >
             <Grid item>
               <Button
+                onClick={onBookmark}
                 variant="contained"
                 color="primary"
                 startIcon={<BookmarkIcon />}
