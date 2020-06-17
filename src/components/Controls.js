@@ -25,8 +25,9 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     left: 0,
     right: 0,
-    bottom: 5,
-    background: "rgba(0,0,0,0.4)",
+    bottom: 0,
+    height: "100%",
+    background: "rgba(0,0,0,0.6)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -149,10 +150,15 @@ const Controls = forwardRef(
             container
             direction="row"
             alignItems="center"
-            justify="flex-end"
+            justify="space-between"
             style
             style={{ padding: 16 }}
           >
+            <Grid item>
+              <Typography variant="h5" style={{ color: "#fff" }}>
+                Video Title
+              </Typography>
+            </Grid>
             <Grid item>
               <Button
                 onClick={onBookmark}

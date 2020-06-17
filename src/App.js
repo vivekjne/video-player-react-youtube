@@ -23,6 +23,7 @@ import Controls from "./components/Controls";
 const useStyles = makeStyles((theme) => ({
   playerWrapper: {
     width: "100%",
+
     position: "relative",
     // "&:hover": {
     //   "& $controlsWrapper": {
@@ -334,7 +335,7 @@ function App() {
             ref={playerRef}
             width="100%"
             height="100%"
-            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
             pip={pip}
             playing={playing}
             controls={false}
